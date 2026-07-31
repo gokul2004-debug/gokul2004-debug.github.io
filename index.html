@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul V - Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --muted-text: #94a3b8;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--muted-text);
+        }
+
+        .contact-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--card-bg);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary);
+            color: var(--bg-color);
+        }
+
+        section {
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            color: var(--muted-text);
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: #334155;
+            color: #f1f5f9;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--muted-text);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Gokul V</h1>
+            <p>Software Developer | Python Full Stack & Database Specialist</p>
+            <p style="font-size: 0.9rem; margin-top: 5px;">Bengaluru, Karnataka | +91 8778113935 | gokulyo2004@gmail.com</p>
+            <div class="contact-links">
+                <a href="https://github.com/gokul2004-debug" class="btn" target="_blank">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/gokul-v-b18a69408" class="btn" target="_blank">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                    Detail-oriented <strong>Bachelor of Computer Applications (BCA)</strong> graduate and certified developer by <strong>HackerRank</strong> and <strong>freeCodeCamp</strong>. Skilled in relational database architecture, PostgreSQL/MySQL management, Bash automation, and Python full-stack web development. Currently undergoing full-stack developer training at QSpiders, Bengaluru.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-badge">Python (Core & OOP)</span>
+                <span class="skill-badge">Advanced SQL</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Bash / Shell Scripting</span>
+                <span class="skill-badge">Django</span>
+                <span class="skill-badge">HTML5 & CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Linux Terminal</span>
+                <span class="skill-badge">Database Design & ERD</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Salon Appointment Scheduler</h3>
+                    <div class="tech-stack">PostgreSQL | SQL | Bash Scripting | Git</div>
+                    <ul>
+                        <li>Designed a normalized PostgreSQL schema to manage customer profiles, service catalogs, and bookings.</li>
+                        <li>Built interactive Bash scripts running parameterized SQL queries for dynamic appointments.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Periodic Table Database</h3>
+                    <div class="tech-stack">PostgreSQL | Bash Scripting | Linux</div>
+                    <ul>
+                        <li>Refactored and normalized scientific elemental data inside a PostgreSQL database.</li>
+                        <li>Created a CLI tool in Bash to query element statistics by atomic number, symbol, or name.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Number Guessing Game</h3>
+                    <div class="tech-stack">Bash Scripting | PostgreSQL | SQL</div>
+                    <ul>
+                        <li>Developed a persistent CLI game tracking user stats and match records in a PostgreSQL database.</li>
+                        <li>Implemented robust input validation and personal best score tracking.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Scientific Computing with Python</h3>
+                    <div class="tech-stack">freeCodeCamp (300+ Hours)</div>
+                    <p style="color: var(--muted-text); font-size: 0.9rem;">Algorithmic logic, data structures, dynamic programming, and OOP concepts.</p>
+                </div>
+
+                <div class="card">
+                    <h3>HackerRank SQL (Advanced)</h3>
+                    <div class="tech-stack">HackerRank Verified</div>
+                    <p style="color: var(--muted-text); font-size: 0.9rem;">Query optimization, window functions, CTEs, and multi-table joining techniques.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Relational Database Certification</h3>
+                    <div class="tech-stack">freeCodeCamp (300+ Hours)</div>
+                    <p style="color: var(--muted-text); font-size: 0.9rem;">Database design, SQL query execution, PostgreSQL, and Linux CLI automation.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Gokul V. Built & Deployed with GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
